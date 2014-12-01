@@ -1,4 +1,4 @@
-require 'stack'
+require 'fizzbuzz'
 
 describe FizzBuzz do 
 
