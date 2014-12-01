@@ -1,6 +1,6 @@
 class FizzBuzz  
-  FIZZ = 'fizz'
-  BUZZ = 'buzz'
+  FIZZ = "fizz"
+  BUZZ = "buzz"
   
   attr_accessor :fizz_num, :buzz_num
     
@@ -16,8 +16,8 @@ class FizzBuzz
   end
   
   def print(num)
-    res = ''
-    (1..num.to_i).each { |n| res << call(n) + '\n' }
+    res = ""
+    (1..num.to_i).each { |n| res << call(n) + "\n" }
     res
   end
   
