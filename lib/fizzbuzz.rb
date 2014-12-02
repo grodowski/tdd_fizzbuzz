@@ -10,7 +10,7 @@ class FizzBuzz
   
   def call(num)
     @num = num
-    validate!
+    raise 'invalid input' unless valid?
     res = check_fizzbuzz
     res == '' ? num.to_s : res
   end
@@ -33,11 +33,7 @@ class FizzBuzz
   def check_value(res, i, word, target)
     res << word if i % target == 0 || @num.to_s.include?(target.to_s)
   end
-  
-  def validate!
-    raise 'invalid input' unless valid?
-  end
-  
+    
   def valid?
     @num.respond_to?(:to_i) && 
     @num.to_i == @num.to_f &&
