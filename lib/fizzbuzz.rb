@@ -1,6 +1,6 @@
 class FizzBuzz  
-  FIZZ = "fizz"
-  BUZZ = "buzz"
+  FIZZ = 'fizz'
+  BUZZ = 'buzz'
   
   attr_accessor :fizz_num, :buzz_num
     
@@ -24,7 +24,7 @@ class FizzBuzz
   private 
   
   def check_fizzbuzz
-    res, i = '', @num.to_i
+    res, i = "", @num.to_i
     check_value res, i, FIZZ, fizz_num
     check_value res, i, BUZZ, buzz_num
     res

@@ -54,7 +54,7 @@ describe FizzBuzz do
   describe '.print' do     
     it 'prints fizzbuzz output' do
       res = subject.print('10')
-      expected = '1\n2\nfizz\n4\nbuzz\nfizz\n7\n8\nfizz\nbuzz\n'
+      expected = "1\n2\nfizz\n4\nbuzz\nfizz\n7\n8\nfizz\nbuzz\n"
       expect(res).to eq expected
     end
   end
